@@ -15,6 +15,12 @@ class Siswa extends CI_Controller{
 
 
   }
+  function tambah_siswa(){
+    $this->load->view('Home/head');   
+    $this->load->view('DataSiswa/t_siswa');
+    $this->load->view('Home/footer');
+
+  }
 
  
 
