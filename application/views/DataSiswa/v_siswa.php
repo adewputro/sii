@@ -35,7 +35,7 @@
                                             <th>Alamat</th>
                                             <th>Agama</th>
                                             <th>Tanggal Daftar</th>
-                                            <th>Foto</th>
+                                           
                                             <th>Action</th>
 
                                         </tr>
@@ -48,14 +48,25 @@
                                             <th>Alamat</th>
                                             <th>Agama</th>
                                             <th>Tanggal Daftar</th>
-                                            <th>Foto</th>
+                                          
                                             <th>Action</th>
 
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         
-                                       
+                                    <?php foreach($datab as $i){ ?>
+                                    <tr>
+                                        <td><?= $i->nama_siswa ?></td>
+                                        <td><?= $i->jk ?></td>
+                                        <td><?= $i->tempat ?>, <?= $i->tgl ?></td>
+                                        <td><?= $i->alamat ?></td>
+                                        <td><?= $i->agama ?></td>
+                                        <td><?= $i->tgl_daftar ?></td>
+                                        <td><a href="#"> <i class="material-icons">delete</i></a> <a href="#"> <i class="material-icons">create</i></a></td>
+
+                                    </tr>
+                                   <?php } ?>
                                     </tbody>
                                 </table>
                             </div>

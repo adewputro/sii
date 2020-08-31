@@ -35,7 +35,7 @@
                                             <th>Penerbit</th>
                                             <th>ISBN</th>
                                             <th>Tahun Penerbit</th>
-                                            <th>Gambar</th>
+                                            <th>Action</th>
 
                                         </tr>
                                     </thead>
@@ -47,10 +47,22 @@
                                             <th>Penerbit</th>
                                             <th>ISBN</th>
                                             <th>Tahun Penerbit</th>
-                                            <th>Gambar</th>
+                                            <th>Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                   <?php foreach($datab as $i){ ?>
+                                    <tr>
+                                        <td><?= $i->no_buku ?></td>
+                                        <td><?= $i->judul_buku ?></td>
+                                        <td><?= $i->nam_peng ?></td>
+                                        <td><?= $i->penerbit ?></td>
+                                        <td><?= $i->isbn ?></td>
+                                        <td><?= $i->tahun ?></td>
+                                        <td><a href="#"> <i class="material-icons">delete</i></a> <a href="#"> <i class="material-icons">create</i></a></td>
+
+                                    </tr>
+                                   <?php } ?>
                                        
                                     </tbody>
                                 </table>

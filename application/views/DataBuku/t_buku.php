@@ -26,46 +26,44 @@
                         </div>
 
                         <div class="body">
+                          <form method="post" action="<?php echo base_url('index.php/buku/tb_buku')?>" > 
                         <div class="row clearfix">
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="No Buku">
+                                        <input type="text" class="form-control" placeholder="No Buku" name="no">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Judul Buku">
+                                        <input type="text" class="form-control" placeholder="Judul Buku" name="judul">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Penerbit">
+                                        <input type="text" class="form-control" placeholder="Penerbit" name="penerbit">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Nama Penerbit">
+                                        <input type="text" class="form-control" placeholder="Nama Penerbit" name="nama">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="ISBN">
+                                        <input type="text" class="form-control" placeholder="ISBN" name="isbn">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Tahun Penerbit">
+                                        <input type="text" class="form-control" placeholder="Tahun Penerbit" name="tahun">
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Gambar">
-                                        </div>
-                                    </div>
-                                    <a href="" class="btn btn-primary waves-effect"> Simpan</a>
+                                  
+                                    <button class="btn btn-primary waves-effect"> Simpan</button>
                                 </div>
                             </div>
+                        </form> 
                         
                        
                       

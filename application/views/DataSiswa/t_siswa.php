@@ -26,46 +26,44 @@
                         </div>
 
                         <div class="body">
+                        <form method="post" action="<?php echo base_url('index.php/siswa/tb_siswa')?>" > 
                         <div class="row clearfix">
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Nama Lengkap">
+                                        <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Jenis Kelamin">
+                                        <input type="text" class="form-control" placeholder="Jenis Kelamin" name="jk">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Tempat Lahir">
+                                        <input type="text" class="form-control" placeholder="Tempat Lahir" name="tempat">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="Date" class="form-control" placeholder="Tanggal Lahir">
+                                        <input type="Date" class="form-control" placeholder="Tanggal Lahir" name="tgl">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Alamat">
+                                        <input type="text" class="form-control" placeholder="Alamat" name="alamat">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Agama">
+                                        <input type="text" class="form-control" placeholder="Agama" name="agama">
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Foto">
-                                        </div>
-                                    </div>
-                                    <a href="" class="btn btn-primary waves-effect"> Simpan</a>
+                               
+                                    <button class="btn btn-primary waves-effect"> Simpan</button>
                                 </div>
                             </div>
+                        </form>
                         
                        
                       
