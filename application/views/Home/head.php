@@ -98,25 +98,25 @@
                 <ul class="list">
                     <!-- <li class="header">MAIN NAVIGATION</li> -->
                     <li>
-                        <a href="pages/typography.html">
+                        <a href="">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="<?= base_url('index.php/siswa'); ?>">
+                        <a href="#">
                             <i class="material-icons">layers</i>
                             <span>Read Me</span>
                         </a>
                     </li>
                     <li>
-                        <a href="pages/helper-classes.html">
+                        <a href="#">
                             <i class="material-icons">description</i>
                             <span>Contact</span>
                         </a>
                     </li>
                     <li>
-                        <a href="pages/helper-classes.html">
+                        <a href="#">
                             <i class="material-icons">class</i>
                             <span>Tamu</span>
                         </a>

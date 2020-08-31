@@ -6,9 +6,9 @@ class Akun extends CI_Controller{
   }
   function index(){
     //Allowing akses to admin only
-            $this->load->view('Home/head');   
+            $this->load->view('Layout/head');   
             $this->load->view('DataAkun/v_akun');
-            $this->load->view('Home/footer');
+            $this->load->view('Layout/footer');
 
 
   }

@@ -27,6 +27,7 @@
                 <div id="loginform">
                     <div class="text-center p-t-20 p-b-20">
                         <h4>DIGITAL LIBRARY</h4>
+                        <h4>SMK NEGERI JATIROGO</h4>
                         <!-- <span class="db"><img src="<?php echo base_url('assets/images/logo.png')?>" alt="logo" /></span> -->
                     </div>
                    

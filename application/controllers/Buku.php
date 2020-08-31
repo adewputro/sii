@@ -6,17 +6,17 @@ class Buku extends CI_Controller{
   }
   function index(){
     //Allowing akses to admin only
-            $this->load->view('Home/head');   
+            $this->load->view('Layout/head');   
             $this->load->view('DataBuku/v_buku');
-            $this->load->view('Home/footer');
+            $this->load->view('Layout/footer');
 
 
   }
 
   function tambah_buku(){
-    $this->load->view('Home/head');   
+    $this->load->view('Layout/head');   
     $this->load->view('DataBuku/t_buku');
-    $this->load->view('Home/footer');
+    $this->load->view('Layout/footer');
   }
 
 }
