@@ -17,7 +17,7 @@ class Page extends CI_Controller{
     if($this->session->userdata('level')==='1'){
      
       
-          $this->load->view('Home/home');
+          $this->load->view('Layout/home');
 
     }else{
         $this->load->view('index.php/login');
@@ -29,7 +29,7 @@ class Page extends CI_Controller{
   function siswa(){
     //Allowing akses to staff only
     if($this->session->userdata('level')==='2'){
-      $this->load->view('Home/home');
+      $this->load->view('Layout/home');
     }else{
         echo "Access Denied";
     }
@@ -38,7 +38,7 @@ class Page extends CI_Controller{
   function pustakawan(){
     //Allowing akses to author only
     if($this->session->userdata('level')==='3'){
-      $this->load->view('Home/home');
+      $this->load->view('Layout/home');
     }else{
         echo "Access Denied";
     }

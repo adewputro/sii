@@ -10,7 +10,7 @@ class Login extends CI_Controller{
   function index(){
       if($this->session->userdata('level')==='1'){
              $data['datab'] = $this->home_model->tampil_data()->result();
-            $this->load->view('Home/home',$data);
+            $this->load->view('Layout/home',$data);
 
       }else{
         // $data1 = $this->db->query("SELECT *,DATE_ADD(tgl_akhir, INTERVAL - 30 DAY) as jatuh_tempo, DATEDIFF(DATE_ADD(tgl_akhir, INTERVAL - 30 DAY), CURDATE()) as selisih FROM pkwt_peg")->row();
