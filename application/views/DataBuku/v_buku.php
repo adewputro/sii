@@ -10,7 +10,9 @@
                                 Data Buku
                             </h2>
                             </br>
+                            <?php if($this->session->userdata('level')==='1'):?>
                             <a href="<?php echo base_url('index.php/buku/tambah_buku') ?>" class="btn btn-primary waves-effect">Tambah Buku</a>
+                            <?php endif; ?>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

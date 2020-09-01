@@ -3,14 +3,13 @@ class Login extends CI_Controller{
   function __construct(){
     parent::__construct();
     $this->load->model('login_model');
-    $this->load->model('home_model');
-     $this->load->model('fungsi');
+  
   }
 
   function index(){
       if($this->session->userdata('level')==='1'){
-             $data['datab'] = $this->home_model->tampil_data()->result();
-            $this->load->view('Layout/home',$data);
+            
+            $this->load->view('Layout/home');
 
       }else{
         // $data1 = $this->db->query("SELECT *,DATE_ADD(tgl_akhir, INTERVAL - 30 DAY) as jatuh_tempo, DATEDIFF(DATE_ADD(tgl_akhir, INTERVAL - 30 DAY), CURDATE()) as selisih FROM pkwt_peg")->row();
